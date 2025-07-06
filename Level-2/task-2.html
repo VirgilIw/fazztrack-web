@@ -1,0 +1,149 @@
+<!-- Soal 1 -->
+<!-- 1. jelaskan inline, internal dan external css
+Inline-style CSS adalah CSS yang ditulis langsung di dalam tag HTML, 
+menggunakan atribut style. kelemahan inline-style, tidak rapi jika digunakan terlalu banyak(proyek-besar) -->
+
+<!-- contoh: -->
+<p style="color: blue; font-size: 10px">Teks ini berwarna biru</p>
+;
+
+<!-- 2. Internal-style CSS adalah CSS yang ditulis di dalam tag <style> yang diletakkan di bagian <head> dokumen HTML. -->
+
+// contoh:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        color: blue;
+        transition: transform 0.3s ease;
+      }
+
+      h1:hover {
+        transform: translateX(10px);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .paragraf {
+        font-size: 18px;
+        color: green;
+      }
+
+      .paragraf:hover {
+        color: red;
+      }
+
+      #btn {
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 2px 8px 8px 2px;
+      }
+
+      #btn:hover {
+        background-color: aqua;
+        outline: none;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Judul Halaman</h1>
+      <p class="paragraf">Isi paragraf</p>
+      <button id="btn">Click Me!</button>
+    </div>
+  </body>
+</html>
+
+<!-- external CSS adalah CSS yang ditulis di file terpisah, biasanya berekstensi
+.css, lalu di-link ke file HTML dengan <link /> di dalam
+<head> 
+file eksternal: style.css 
+  h1{ 
+    color: purple; } 
+  .paragraf{ 
+    font-size: 16px;
+    color: darkgreen; 
+  } -->
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Judul</h1>
+    <p class="paragraf">Isi paragraf</p>
+  </body>
+
+  <!-- Soal 2 -->
+
+  <!-- Berikut 15 property CSS dan fungsinya -->
+
+  <!-- 1. color, mengatur warna teks -->
+  <p style="color: red">Teks warna merah</p>
+
+  <!-- 2. background-color, mengatur warna latar belakang elemen -->
+  <div style="background-color: yellow">Latar belakang kuning</div>
+
+  <!-- 3. font-size, mengatur ukuran teks  -->
+  <p style="font-size: 24px">Teks besar</p>
+
+  <!-- 4. font-family, menentukan jenis huruf -->
+  <p style="font-family: Arial, sans-serif">Teks Arial</p>
+
+  <!-- 5. text-align, mengatur perataan teks(kiri, kanan, tengah) -->
+  <p style="text-align: center">Teks rata tengah</p>
+
+  <!-- 6. margin, memberi jarak luar (dari elemen lain) -->
+  <div style="margin: 20px">Ada jarak luar 20px</div>
+
+  <!-- 7. padding, memberi jarak luar(isi ke batas dalam) -->
+  <div style="padding: 10px">Ada jarak dalam 10px</div>
+
+  <!-- 8. border, menambahkan garis di sekeliling elemen -->
+  <div style="border: 2px solid black">Ada garis tepi</div>
+
+  <!-- 9. width, menentukan lebar elemen -->
+  <div style="width: 200px">Lebar 200px</div>
+
+  <!-- 10. height, menentukan tinggi elemen  -->
+  <div style="height: 100px">Tinggi 100px</div>
+
+  <!-- 11. display, mengatur tipe tampilan elemen -->
+  <div style="display: flex">Display Flexbox</div>
+
+  <!-- 12. position, mengatur cara suatu elemen diposisikan dalam halaman web. Ada beberapa nilai utama untuk properti ini, dan masing-masing punya perilaku yang berbeda 
+   1. static 
+position: static;
+ Nilai default. Elemen mengikuti alur dokumen normal. Tidak bisa digeser dengan top/left. 
+
+ 2. relative 
+position: relative;
+ Elemen tetap di tempat semula, tapi bisa digeser dengan top, left, right, bottom.
+   Gesernya relatif terhadap posisi aslinya. */
+
+ 3. absolute 
+position: absolute;
+ Elemen keluar dari alur normal. Posisinya relatif terhadap elemen induk yang punya
+   position: relative/absolute/fixed. Jika tidak ada, maka relatif terhadap <body>. 
+
+ 4. fixed 
+position: fixed;
+ Elemen menempel di layar (viewport), tidak bergerak meski halaman di-scroll. 
+
+ 5. sticky 
+position: sticky;
+ Gabungan relative dan fixed. Elemen scroll seperti biasa, tapi akan “menempel”
+   di posisi tertentu saat mencapai batas scroll.
+
+  -->
+  <div style="position: relative">Posisi relative</div>
+
+  <!-- 13. z-index, mengatur lapisan tumpukan elemen(urutan tampil di depan/belakang) -->
+  <div style="z-index: 5; position: absolute">Z-index 5</div>
+
+  <!-- 14. overflow, mengatur bagaimana konten yang melebihi elemen ditampilkan -->
+  <div style="overflow: auto">Konten bisa di-scroll jika lebih besar</div>
+
+  <!-- 15. box-shadow, memberi bayangan (shadow) pada elemen seperti kotak, tombol, gambar, dan lainnya agar tampilannya lebih menarik atau terlihat seperti mengambang.-->
+  <div style="box-shadow: 2px 2px 5px gray">Bayangan kotak</div>
+</head>

@@ -1,0 +1,176 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.rancho-regular {
+  font-family: 'Rancho', cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fazz {
+  color: #eaeaea;
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+#logo-fazz {
+  width: 40px;
+  height: 40px;
+  margin-right: 40px;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #eaeaea;
+  font-size: 40px;
+}
+
+.garis {
+  width: 93%;
+  height: 3px;
+  background-color: white;
+  margin: 10px 55px 10px 50px;
+}
+
+.main-wrap {
+  margin: 20px 50px;
+  background-color: #eaeaea;
+  border: 2px solid blue;
+  color: orange;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 25px;
+  height: 200px;
+}
+
+.main-wrapDua {
+  margin: 20px 50px;
+  background-color: #eaeaea;
+  border: 2px solid orange;
+  color: blue;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 25px;
+  height: 220px;
+}
+
+h5 {
+  padding-left: 10px;
+}
+
+footer {
+  padding: 20px;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.btn-footer {
+  width: 96%;
+  padding: 10px 20px;
+  background-color: rgb(218, 112, 0);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn-footer:hover {
+  background-color: rgb(243, 133, 54);
+  color: black;
+}
+
+.garisBawah {
+  width: 94%;
+  height: 3px;
+  background-color: white;
+  margin-top: 30px;
+  margin-left: 45px;
+}
+
+@media (min-width: 400px) and (max-width: 1000px) {
+  body {
+    max-height: 100vh;
+  }
+
+  header {
+    padding-top: 20px;
+  }
+
+  .rancho-regular {
+    font-size: 25px;
+  }
+
+  .fazz {
+    font-size: 20px;
+  }
+
+  #logo-fazz {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  .garis {
+    width: 93%;
+    height: 3px;
+    background-color: white;
+    margin: 40px 20px;
+  }
+
+  .main-wrap,
+  .main-wrapDua {
+    margin: 5px 28px;
+    width: 90%;
+    height: 25vh;
+    font-weight: lighter;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .btn-footer {
+    width: 97%;
+  }
+
+  .garisBawah {
+    width: 93%;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-left: 22px;
+  }
+  footer {
+    padding: 20px;
+  }
+}
